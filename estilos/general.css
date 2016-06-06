@@ -47,6 +47,18 @@ body {
     top: 0;
     width: 100%;
 }
+}
+/* tema veraniego */
+.cabecera3 {
+    height: 60px;
+    margin: left;
+    background-color: #006DB4;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
 #cabecera1 {
 height: 60px;
 float: left;
@@ -87,6 +99,17 @@ color: white;
     color: white;
     text-align: center;
 }
+/* tema veraniego */
+.pie3 {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #006DB4;
+    bottom: 0;
+    color: white;
+    text-align: center;
+}
+
 /* --------------------------ESTILOS PARA EL LOGIN-------------------------- */
 
 .logform {
@@ -195,6 +218,15 @@ color: white;
     height: 30px;
     text-align: center;
     background-color: #424242;
+    padding-top: 5px;
+    color: white;
+}
+/* tema veraniego */
+.liscab3 {
+     width: auto;
+    height: 30px;
+    text-align: center;
+    background-color: #A7B3B5;
     padding-top: 5px;
     color: white;
 }

@@ -2,6 +2,9 @@
 <?php
   session_start();
   include("../configuracion_bd.php");
+if (!isset($_SESSION["usuario"])) {
+              header("Location: ../login.php");
+         }
 unset($_SESSION['id']);
 // ----------------- PARA LA LISTA DE REPRODUCCION       -----------------------
                   if (isset($_GET['cancion'])) {
@@ -46,7 +49,7 @@ $connection3 = new mysqli($db_host, $db_user, $db_password, $db_name);
                echo "&nbsp &nbsp &nbsp <a href='administracion.php'>Ir a la zona de administración</a>";
            } ?>&nbsp&nbsp&nbsp <a href="usuario.php"> Volver</a></p></div>
       </div>
-      <div class="nuevalista"><a>PDF COMPLETO</a></div>
+      <div class="nuevalista"><a>DASHBOARD</a></div>
       <!-- --------------LISTAS---------------- -->
       <div class="listas">
           <div class="<?php echo $_SESSION['tema'][2]; ?>">Listas:</div>
@@ -64,7 +67,7 @@ $connection->set_charset("utf8");
                 echo "<p>No tiene lista</p>";
               } else {
                  while($obj = $result->fetch_object()) {
-                     echo "<li><img src='../img/pdf.png'> ".$obj->nombre_lista." <span class='fechacr'></span></li>";
+                     echo "<li><a href='pdflista.php?id=$obj->id_lista'><img src='../img/pdf.png'></a> ".$obj->nombre_lista." <span class='fechacr'></span></li>";
                  }
                   $result->close();
                   unset($obj);
@@ -87,8 +90,7 @@ $connection->set_charset("utf8");
         <div class="cabtema2">
           <li><a href="tema.php?tema=original">Original</a></li>
             <li><a href="tema.php?tema=oscuro">Oscuro</a></li>
-            <li><a>En construcción</a></li>
-            <li><a>En construcción</a></li>
+            <li><a href="tema.php?tema=veraniego">Veraniego</a></li>
           </div>
       </div>
       <div class="<?php echo $_SESSION['tema'][1]; ?>"><p>Desde esta página puedes ver información sobre tu usuario y sobre las listas de reproducción que has creado</p></div>

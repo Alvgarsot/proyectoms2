@@ -130,8 +130,7 @@ else {
         <div class="cabtema2">
           <li><a href="tema.php?tema=original">Original</a></li>
             <li><a href="tema.php?tema=oscuro">Oscuro</a></li>
-            <li><a>En construcción</a></li>
-            <li><a>En construcción</a></li>
+            <li><a href="tema.php?tema=veraniego">Veraniego</a></li>
           </div>
       </div>
       <div class="<?php echo $_SESSION['tema'][1]; ?>"><?php

@@ -64,6 +64,12 @@ if (isset($usuario)) {
 }
 ?>
           </table>
+          <div class="dashboard2">
+              <p>Cobertura de géneros musicales en la página web</p>
+          <img src="grafica4.php">
+              <p>Número de listas de reproducción por usuario</p>
+              <img src="grafica5.php">
+              </div>
                </div>
       <div class="pie"><p>En esta zona puedes administrar los usuarios, pudiendo borrarlos e incluso editar sus listas de reproducción</p></div>
   </body><?php  unset($connection); ?>

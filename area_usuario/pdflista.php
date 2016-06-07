@@ -47,7 +47,7 @@ $pdf->Ln(8);
 $pdf->SetFont('Arial');
 if ($result = $connection->query("SELECT * FROM lista , usuario, forma, cancion WHERE lista.nombre_usuariofk=usuario.nombre_usuario AND lista.id_lista=forma.id_listafk AND cancion.id_cancion=forma.id_cancionfk2 AND nombre_usuario='".$_SESSION['usuario']."' AND id_lista='".$_GET['id']."' ORDER BY num_cancion asc;")) {
               if ($result->num_rows===0) {
-                echo "NO TIENE PLAN ASIGNADO";
+                header("Location: perfil.php");
               } else {
                $i=0;
                   

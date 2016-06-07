@@ -49,7 +49,7 @@ $connection3 = new mysqli($db_host, $db_user, $db_password, $db_name);
                echo "&nbsp &nbsp &nbsp <a href='administracion.php'>Ir a la zona de administración</a>";
            } ?>&nbsp&nbsp&nbsp <a href="usuario.php"> Volver</a></p></div>
       </div>
-      <div class="nuevalista"><a>DASHBOARD</a></div>
+      
       <!-- --------------LISTAS---------------- -->
       <div class="listas">
           <div class="<?php echo $_SESSION['tema'][2]; ?>">Listas:</div>
@@ -81,8 +81,9 @@ $connection->set_charset("utf8");
       </div>
       <!-- -----------------GRAFICA----------------- -->
       <div class="canciones">
-          <div class="<?php echo $_SESSION['tema'][5]; ?>">Gráfica por preferencia de género</div>
-          <div class="<?php echo $_SESSION['tema'][6]; ?>">
+          <div class="<?php echo $_SESSION['tema'][5]; ?>">Preferencias</div>
+          <div class="<?php echo $_SESSION['tema'][6]; ?>"><img class="dashboard" src="grafica1.php"> <img class="dashboard" src="grafica3.php"> 
+             <img class="dashboard" src="grafica2.php">
         </div>
       </div>
       <div class="temas">

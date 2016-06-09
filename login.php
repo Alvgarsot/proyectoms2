@@ -2,7 +2,9 @@
 <?php
 
   include_once("./configuracion_bd.php");
-
+ if (!isset($db_user)) {
+              header("Location: ./instalador.php");
+         }
   session_start();
 unset($_SESSION['id']);
 ?>

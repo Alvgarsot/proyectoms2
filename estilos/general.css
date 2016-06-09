@@ -204,6 +204,15 @@ color: white;
     text-align: center;
     padding-top: 30px;
 }
+/* -----------------ESTILOS PARA EL INSTALADOR------------ */
+
+.creaform2 {
+    margin-left: 35%;
+    margin-top: 140px;
+    width: 30%;
+    height: 340px;
+   background-color: white;
+}
 /* -----------------ESTILOS PARA EL DISPLAY DE LISTAS DE REPRODUCCION------------ */
 .listas {
     float: left;
